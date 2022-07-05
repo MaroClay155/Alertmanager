@@ -71,6 +71,7 @@ jobs:
             fingerprints: ["87:c2:d0:af:d5:78:91:13:33:07:72:95:a4:9f:e1:89"]
       - run:
           name: Deploy alertmanager
+          no_output_timeout: 30m
           command: |
             cd .circleci/ansible
             echo "Contents  of the alertmanager-inventory file is -------"
